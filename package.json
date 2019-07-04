@@ -4,7 +4,7 @@
   "description": "",
   "main": "refactoring.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "author": "",
   "license": "MIT",
