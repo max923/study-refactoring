@@ -8,19 +8,22 @@ function statement(invoice, plays) {
     minimumFractionDigits: 2
   }).format
   for( let perf of invoice.performances ) {
-    // const play = playFor(perf)
-    let thisAmount = amountFor(perf)
-     // add volume creadits
-    volumeCredits += Math.max(perf.audience - 30, 0)
-    // add extra credit for every ten comedy attendees
-    if ('comedy' === playFor(perf).type) volumeCredits += Math.floor(perf.audience / 5)
+    // let thisAmount = amountFor(perf)
+    volumeCredits += volumeCreditsFor(perf)
     // print line for this order
-    result += `${playFor(perf).name}: ${format(thisAmount/100)} (${perf.audience / 5})`
-    totalAmount += thisAmount;
+    result += `${playFor(perf).name}: ${format(amountFor(perf)/100)} (${perf.audience / 5})`
+    totalAmount += amountFor(perf);
   }
   result += `Amount owed is ${format(totalAmount/100)}\n`
   result += `You earned ${volumeCredits} credits\n`
 
+  function volumeCreditsFor(aPerformance) {
+    let result = 0
+    result += Math.max(aPerformance.audience - 30, 0)
+    // add extra credit for every ten comedy attendees
+    if ('comedy' === playFor(aPerformance).type) result += Math.floor(aPerformance.audience / 5)
+    return result
+  }
  
   function playFor(aPerformance) {
     return plays[aPerformance.playID]
@@ -28,7 +31,6 @@ function statement(invoice, plays) {
   
   function amountFor(aPerformance) {
     let result = 0
-    // It executed one become to thrice and how interplay of refactoring and performance
     switch (playFor(aPerformance).type) {
       case 'tragedy':
         result = 4000

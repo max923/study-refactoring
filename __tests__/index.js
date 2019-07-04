@@ -1,5 +1,5 @@
 // const { statement } = require('../index')
-const { statement } = require('../first-example/step2')
+const { statement } = require('../first-example/step3')
 const plays = {
   hamlet: {
     name: 'hamlet',

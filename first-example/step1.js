@@ -1,26 +1,3 @@
-function amountFor(perf, play) {
-  let result = 0
-  switch (play.type) {
-    case 'tragedy':
-      result = 4000
-      if(perf.audience > 30) {
-        result += 1000 * (perf.audience - 30)
-      }
-      break;
-    case 'comedy':
-      result = 3000
-      if(perf.audience > 20) {
-        result += 1000 + 500 * (perf.audience - 20)
-      }
-      result += 300 * perf.audience
-      break;
-    default:
-      throw new Error(`unknown type: ${play.type}`)
-      break;
-  }
-  return result
-}
-
 function statement(invoice, plays) {
   let totalAmount = 0
   let volumeCredits = 0
@@ -62,6 +39,30 @@ function statement(invoice, plays) {
   result += `Amount owed is ${format(totalAmount/100)}\n`
   result += `You earned ${volumeCredits} credits\n`
   return result
+  
+  // always call the return value from a function "result"
+  function amountFor(perf, play) {
+    let result = 0
+    switch (play.type) {
+      case 'tragedy':
+        result = 4000
+        if(perf.audience > 30) {
+          result += 1000 * (perf.audience - 30)
+        }
+        break;
+      case 'comedy':
+        result = 3000
+        if(perf.audience > 20) {
+          result += 1000 + 500 * (perf.audience - 20)
+        }
+        result += 300 * perf.audience
+        break;
+      default:
+        throw new Error(`unknown type: ${play.type}`)
+        break;
+    }
+    return result
+  }
 }
 
 module.exports = {
