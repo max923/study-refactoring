@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p id="statement"></p>
+  <script src="./createStatementData.js"></script>
+  <script src="./statement.js"></script>
+  <script>
+
+    const plays = {
+      hamlet: {
+        name: 'hamlet',
+        type: 'tragedy'
+      },
+      like: {
+        name: 'As You Like It',
+        type: 'comedy'
+      },
+      othello: {
+        name: 'Othello',
+        type: 'tragedy'
+      },
+    }
+    const invoice = {
+      customer: 'BigCo',
+      performances: [
+        {
+        playID: 'hamlet',
+        audience: 55
+        },
+        {
+          playID: 'like',
+          audience: 35
+        },
+        {
+          playID: 'othello',
+          audience: 40
+        }
+      ]
+    }
+    console.log(htmlStatement(invoice, plays))
+    document.getElementById('statement').innerHTML = htmlStatement(invoice, plays)
+
+  </script>
+</body>
+</html>
