@@ -1,1 +1,0 @@
-const { statement } = require('../../src/first-example/step8/statement')
