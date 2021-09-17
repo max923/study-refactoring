@@ -1,0 +1,134 @@
+{
+  "-----s general-----"                     : "-----s general-----",
+  "app_name"                                : "Trend Micro Family",
+  
+  "extension_app_name"                      : "Safe Filter for Kids",
+  "extension_app_sales"                     : "Free",
+  "extension_app_description"               : "A Chrome extension that provides real-time blocking of explicit graphics and content.",
+  "extension_app_platform"                  : "",
+  
+  "mobile_app_name"                         : "Trend Micro Family",
+  "mobile_app_sales"                        : "Free",
+  "mobile_app_description"                  : "Trend Micro Family Digital Awareness/Digital Wellbeing apps to assist in youngster’s digital habits.",
+  "mobile_app_platform"                     : "Android | iOS",
+
+  "checker_instagram"                       : "Instagram",
+  "checker_tiktok"                          : "Tiktok",
+  "checker_facebook"                        : "Facebook",
+  "email"                                   : "Email",
+  "credentials"                             : "Credentials",
+  "results"                                 : "Results",
+
+  "checker_coming_soon"                     : "(coming soon)",
+
+  "-----e general-----"                     : "-----e general-----",
+
+  "-----s components.header-----"           : "-----s components.header-----",
+  "header_title"                            : "Family",
+  "-----e components.header-----"           : "-----e components.header-----",
+  
+  "-----s components.radarGraph-----"       : "-----s components.radarGraph-----",
+  "radar_label_privacy"                     : "Privacy",
+  "radar_label_security"                    : "Security",
+  "radar_label_wellness"                    : "Wellness",
+  "radar_label_engagement_level"            : "Engagement Level",
+  "radar_label_others"                      : "Others",
+  "radar_risk_level"                        : "Risk Level",
+  "radar_no_risk_found"                     : "No risks found",
+  "-----e components.radarGraph-----"       : "-----e components.radarGraph-----",
+  
+  "-----s pages.portal-----"                : "------------------------s pages.portal-----------------------",
+  "portal_social_media"                     : "Social Media",
+  "portal_banner_title"                     : "Optimize your <strong>Social Media</strong> Privacy and Security Settings",
+  "portal_title"                            : "<bold>__appName__</bold> checks your current privacy settings and recommends the best settings to help keep you and your family safe.",
+  "portal_aside_product_intro"              : "__appName__ Products",
+  "portal_check_now"                        : "Check Now",
+  "-----e pages.portal-----"                : "------------------------e pages.portal-----------------------",
+
+  "-----s pages.checkup-----"               : "-----s pages.checkup-----",
+  "checkup_title_scan"                      : "__platform__ Check",
+  "checkup_title_apply"                     : "__platform__ Settings Wizard",
+  
+  "checkup_email_description"               : "Provide the email address that you want Trend Micro to send the results to.",
+  "checkup_email_address"                   : "Email address",
+
+  "checkup_credential_description_scan"     : "Provide your __platform__ account and password to allow Trend Micro to check your settings.",
+  "checkup_credential_description_apply"    : "Provide your __platform__ account and password to allow Trend Micro to change your settings.",
+  "checkup_credential_account"              : "__platform__ account",
+  "checkup_credential_password"             : "Password",
+  "checkup_credential_note"                 : "<strong>NOTE:</strong> Trend Micro does not save your account or password after this one-time scan.",
+
+  "checkup_progress_bar_description_scan"   : "This might take a few minutes. You can wait for the results or check your email later to find out what we found.",
+  "checkup_progress_bar_description_apply"  : "This might take a few minutes to complete.",
+  "checkup_progress_bar_loading_scan"       : "Gathering information...",
+  "checkup_progress_bar_loading_apply"      : "Applying recommended settings...",
+
+  "-----e pages.checkup-----"               : "-----e pages.checkup-----",
+
+  "-----s pages.report-----"                : "------------------------s pages.report-----------------------",
+  "report_gray_info_title"                  : "Thank you for using __appName__",
+  "report_gray_info_description"            : "After checking your __platform__ settings, we found the following:",
+  "report_gray_info_description_suggestion" : "See the collapsed report above to make changes to your account or click the red \"Apply Recommended Settings\" button on the top to let us do it for you.",
+  "report_gray_info_title_applied"          : "Recommended Setting Applied",
+  "report_detail_info_title"                : "__platform__ Check Report",
+  "report_detail_info_category"             : "CATEGORY",
+  "report_detail_info_current_settings"     : "CURRENT SETTINGS",
+  "report_detail_info_recommended_settings" : "RECOMMENDED SETTINGS",
+  "report_critical_issue_found_singular"    : "1 critical privacy and security setting found",
+  "report_critical_issue_found_plural"      : "__number__ critical privacy and security settings found",
+  "report_suggest_action"                   : "Protect your account now by quickly applying the recommended settings.",
+  "report_apply_recommended_settings"       : "Apply Recommended Settings",
+  "report_optimized"                        : "Optimized!",
+  "report_settings"                         : "__category__ setting",
+  "report_promotion_title"                  : "Do you like this __appName__ App?",
+  "report_promotion_description"            : "If you like what you see, please install and open Trend Micro Family app on your device to find the pairing code. <hrefLearnMore>Learn more</hrefLearnMore>",
+  "report_promotion_action"                 : "Install __appName__ App",
+  "report_promotion_referral"               : "Here’s a referral link that you could share with your friends to give it a try:",
+  "report_conclusion_has_applied"           : "Recommended settings was applied on __date__",
+  "report_conclusion_has_applied_action"    : "View new report",
+  "report_current_setting"                  : "Current settings",
+  "report_current_recommended"              : "Recommended settings",
+  "-----e pages.report-----"                : "------------------------e pages.report-----------------------",
+  "error": {
+    "page": {
+      "title": "__platform__ Privacy and Security Setting",
+      "message_title": "Oops!  Unexpected Error.",
+      "message": "We encountered an unexpected error.  Please try again",
+      "report_expired_message_title": "This report has expired",
+      "report_expired_message": "Please go back to the main page to re-run the scan to get a new report.",
+      "btn_go_main_website": "Go to main website"
+    },
+    "messages": {
+      "unassociated_account": "This is not the account associated with. Try again.",
+      "invalidated_security_code": "That security code did not work. Please type the code again."
+    }
+  },
+  "apply": {
+    "successful": {
+      "title": "Successful",
+      "message": "Recommended settings have been applied."
+    }
+  },
+  "button": {
+    "go_to_index": "Go Back to Trend Micro Family",
+    "go_to_main": "Go to main website",
+    "cancel": "Cancel",
+    "next": "Next",
+    "expand_all": "Expand All"
+  },
+  "checkup": {
+    "application_2fa": {
+      "title": "Login Request Sent",
+      "message": "A notification was sent to the trusted devices for this account. If you already logged in using another device, you can open __platform__ app and approve this request."
+    },
+    "emailPhase": {
+      "declare_policy": "By checking this box, I certify that I am the parent with sole custody or have obtained consent from all other custodians and I agree to all the terms of <hrefEU>EULA</hrefEU> and <hrefPolicy>privacy policy</hrefPolicy>"
+    },
+    "securityCode": {
+      "description": "Additional security is required for this account. Please type the one-time passcode."
+    }
+  },
+  "report": {
+    "date_time": "Scanned Date:"
+  }
+}
